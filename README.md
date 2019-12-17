@@ -18,13 +18,11 @@ The skeleton, which can load a system of lobes, feed it and gather its output.
 ### Install
 
 ## Contribution guidelines
-
-**If you want to contribute to Evariste, be sure to review the
 This project adheres to Evariste's
 [code of conduct](code_of_conduct.md). By participating, you are expected to
 uphold this code.**
 
-**We use [GitHub issues](https://github.com/tgergo1/evariste/issues) for
+We use [GitHub issues](https://github.com/tgergo1/evariste/issues) for
 tracking requests and bugs
 
 The Evariste project strives to abide by generally accepted best practices in
