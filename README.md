@@ -4,7 +4,7 @@ Evariste is bold approach to make a step towards general artifical intelligence.
 It intends to join several current aspects of machine learning and neuroscience, and provide a fresh, modern toolset to implement and use it.
 
 ## Components
-### Trainer
+### skeleton
 The environment of training a system of lobes.
 ### Editor
 A graphical tool to edit and inspect the physical location, shape end connection of lobes.
