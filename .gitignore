@@ -1,3 +1,4 @@
 .vscode/launch.json
 .vscode/tasks.json
 evariste
+/out/build/x64-Debug
