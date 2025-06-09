@@ -101,15 +101,7 @@ class NeuralNetwork:
         return connections
 
 
-def signal_handler(sig, frame):
-    print('Interrupt received, stopping...')
-    network.stop_all_neurons()
-    sys.exit(0)
-
-
-def main():
-    signal.signal(signal.SIGINT, signal_handler)
-
+def run_visualization():
     app = QApplication(sys.argv)  # Initialize QApplication before creating any widgets
 
     view = gl.GLViewWidget()
@@ -149,6 +141,13 @@ def main():
     timer.timeout.connect(update_visualization)
     timer.start(100)
 
+    def signal_handler(sig, frame):
+        print('Interrupt received, stopping...')
+        network.stop_all_neurons()
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, signal_handler)
+
     try:
         while any(neuron.alive for neuron in network.neurons):
             random_neuron = random.choice(network.neurons)
@@ -162,5 +161,6 @@ def main():
     print("Neuron threads have finished.")
     sys.exit(app.exec_())
 
+
 if __name__ == "__main__":
-    main()
+    run_visualization()
